@@ -1,0 +1,24 @@
+
+.component-three{
+background-color:#0c0c0c;
+text-align: center;
+padding:50px 30px;
+
+
+    &-inner{
+        border: 1px solid #000;       
+        background:#fff;
+        box-shadow: 1px 1px 5px 5px #000;
+        
+        margin: 0 auto;
+        padding:50px;
+        opacity: 0.1;
+        h2{
+            margin:0px;
+            opacity:1;
+            position: relative;
+            z-index: 1;
+            color:#fff;
+        }
+    }
+}

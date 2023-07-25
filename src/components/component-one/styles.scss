@@ -1,0 +1,277 @@
+header{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    align-items: center;
+    padding:5px 0px;
+    max-width: 1110px;
+}
+
+
+.logo{
+    margin-top:5px;
+    
+    img{
+        width:165px;
+        height:50px;
+    }
+}
+
+.ham-menu{
+    display: none;
+}
+
+
+
+.header-menu1{
+
+   margin-left:70px;
+            a{
+                font-family: 'Inter', sans-serif;
+                text-decoration: none;
+                color:#303030;
+                font-size:14px;
+                padding:20px;
+            }
+
+            .normal_navlinks:hover{
+                color:#8a8a8a;
+            }
+}
+
+.header-menu2{
+
+    margin-left:70px;
+             a{
+                 font-family: 'Inter', sans-serif;
+                 text-decoration: none;
+                 color:#303030;
+                 font-size:14px;
+                 padding:20px;
+             }
+ 
+             .normal_navlinks:hover{
+                 color:#8a8a8a;
+             }
+ }
+
+.get-in-touch-btn{
+    background: #000;
+    color:#fff !important;
+    padding:16px 25px !important;
+    margin-left: 10px;
+    &:hover{
+        background: #3898ec;
+    }
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+
+  /* service dropdown style start */
+
+.services-content {
+  display: none;
+  position: absolute;
+  top:40px;
+  min-width: 250px;
+  background-color: #000;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+
+  div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 17px;
+
+    i{
+        color:#fff;
+        visibility: hidden;
+    }
+  }
+}
+
+
+.services-content a{
+    display: block; 
+    color:#dfdfdf !important; 
+    text-decoration: none !important;
+    padding: 17px 0px;}
+
+.dropdown:hover {.services-content {display: block;}}
+
+.services-content div:hover {background-color:#303030; i{visibility: visible;}  }
+
+/* service dropdown style end */
+
+
+/*hire developer dropdown styles start*/
+
+.hire-developers-content{
+  display: none;
+  position: absolute;
+  top:40px;
+  min-width: 750px;
+  background-color: #000;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+
+  div{
+    display: flex;
+
+        .t-1, .t-2, .t-3{
+            display: flex;
+            flex-direction: column;
+            min-width:250px;
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:0px 17px;
+
+            i{
+                color:#fff;
+                visibility: hidden;
+            }
+        }
+        }
+  }
+
+}
+
+
+
+
+.hire-developers-content a{
+    display: block; 
+    color:#dfdfdf !important; 
+    text-decoration: none !important;
+    padding: 17px 0px;}
+
+.dropdown:hover {.hire-developers-content {display: block;}}
+
+.hire-developers-content {
+.t-1, .t-2, .t-3 {
+div:hover{
+    background-color:#303030; i{visibility: visible;}  
+}
+}
+}
+
+
+/*hire developer dropdown styles end*/
+
+
+
+/*media queries*/
+
+
+/* Large screens ----------- */
+
+@media screen and (min-width: 1252px) {
+    .hidden-menu{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width:1100px)  and (max-width : 1251px) {
+    .header-menu1{
+        margin-left:60px;
+         a{
+        font-size: 13px;
+        padding:16px;
+    }
+}
+
+.hidden-menu{
+    display: none;
+}
+}    
+
+
+@media only screen and (min-width:950px)  and (max-width : 1099px) {
+    .header-menu1{
+        margin-left:60px;
+         a{
+        font-size: 12px;
+        padding:10px;
+    }
+}
+
+.hidden-menu{
+    display: none;
+}
+}    
+
+
+@media only screen and (min-width:240px) and (max-width:949px){
+.header-menu1{
+    display: none;
+}
+
+    .ham-menu{
+        display: flex;
+        justify-content: space-around;
+        color:#000;
+        font-size: 25px;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        width:85%;
+    }
+
+    .hidden-menu{
+        z-index:5;
+        background-color: #fff;
+        position: fixed;
+        width:85%;
+        animation: slide-in 0.5s ease-in-out;
+        top:12%;
+
+                
+        @keyframes slide-in {
+            0% { top: -35% }
+            100% { top: 12% }
+        }
+
+        .header-menu2{
+            display: flex;
+            flex-direction: column;
+            margin-left:0px;
+
+            .dropdown{
+                a{
+                display: block;
+                padding:20px;
+                }
+
+                &:hover {.services-content {display: block;}}
+               
+            }
+            
+        }
+
+        
+
+
+    }
+
+    .get-in-touch-btn{
+        margin-left:0px;
+    }
+
+
+    .features{
+        flex-direction: column;
+    }
+}

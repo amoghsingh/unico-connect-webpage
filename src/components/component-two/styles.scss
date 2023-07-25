@@ -1,0 +1,130 @@
+.comp-2-container{
+    background: #000;
+}
+
+
+
+.comp-2-main-div{
+
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+
+
+    h1{
+       
+        color:#fff;
+        font-size: 45px;
+        font-family: 'Inter', sans-serif;
+        line-height: 1.1em;
+        text-align: center;
+        width:60%;
+        margin:0 auto;
+        span{
+            color:rgba(255,255,255,.5);
+        }
+    }
+
+
+   
+    p{
+        color:#fff;
+        font-size: 18px;
+        font-family: 'Inter', sans-serif;
+        font-weight:300;
+        line-height: 1.4em;
+        margin-left:auto;
+        margin-right:auto;
+        width:30%;
+        text-align: center;
+        margin-top:30px;
+    }
+
+    div{
+    
+    display: flex;
+    justify-content: center;
+
+    a{
+        width: 110px;
+        color: #1f1f1f;
+        text-transform: uppercase;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 20px;
+        transition: opacity .3s;
+        display: flex;
+        text-decoration: none;
+        line-height: inherit;
+        margin-top:30px;
+        font-size: 14px;
+        cursor: pointer;
+        &:hover{
+            background: #3898ec;
+            color:#fff;
+        }
+    }
+    }
+
+
+
+    .features{
+        display: flex;
+        margin-top:30px;
+        justify-content: space-evenly;
+        width: 85%;
+        margin:40px auto;
+
+        &-inner{
+
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                
+
+        }
+
+        &-image{
+
+            img{
+                width:60px;
+                height:60px;
+            }
+
+        }
+
+        &-text{
+            margin-top:20px;
+            color:#fff;
+            border: 1px solid rgba(255,255,255,.2);
+            border-radius: 100px;
+            padding:20px;
+            height:30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:300px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    
+        
+    }
+
+
+
+
+
+
+}
+
+
+@media screen and (min-width:240px) and (max-width:950px) {
+    .features-inner{
+        margin-bottom: 30px;
+    }
+}
